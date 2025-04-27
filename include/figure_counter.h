@@ -10,7 +10,7 @@ constexpr char BLANK_CHAR = '0' + BLANK;
 constexpr int8_t COLORED = 1;
 constexpr char COLORED_CHAR = '0' + COLORED;
 
-constexpr int COLORED_VISITED = -1;
+constexpr int8_t COLORED_VISITED = -1;
 
 using matrix_row_t = std::vector<int8_t>;
 using matrix_t = std::vector<std::vector<int8_t>>;
