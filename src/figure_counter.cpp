@@ -4,8 +4,6 @@
 #include <stack>
 #include <utility>
 #include <limits>
-#include <iostream>
-
 
 // Define the four directions: up, right, down, left
 constexpr std::pair<int, int> directions[] = {
