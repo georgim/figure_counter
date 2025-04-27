@@ -15,8 +15,8 @@ constexpr std::pair<int, int> directions[] = {
 static inline void visitCell(
     std::queue<std::pair<int, int>>& q,
     matrix_t& matrix,
-    const int row,
-    const int col
+    int row,
+    int col
 ) {
     matrix[row][col] = COLORED_VISITED;
     q.push({row, col});
@@ -25,10 +25,10 @@ static inline void visitCell(
 // Function to perform BFS and mark all connected cells as visited
 static void markFigureCells(
     matrix_t& matrix,
-    const int startRow,
-    const int startCol,
-    const std::size_t matrixRows,
-    const std::size_t matrixCols
+    int startRow,
+    int startCol,
+    std::size_t matrixRows,
+    std::size_t matrixCols
 ) {
     std::queue<std::pair<int, int>> q;
     visitCell(q, matrix, startRow, startCol);
