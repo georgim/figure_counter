@@ -15,10 +15,6 @@ target_include_directories(figure_counter PUBLIC "${PROJECT_SOURCE_DIR}/include"
 add_executable(test_generator test/test_generator.cpp)
 target_include_directories(test_generator PUBLIC "${PROJECT_SOURCE_DIR}/include")
 
-# Add validation test executable
-add_executable(validate_output test/validate_output.cpp src/figure_counter.cpp)
-target_include_directories(validate_output PUBLIC "${PROJECT_SOURCE_DIR}/include")
-
 enable_testing()
 
 # Add custom target to generate test files
