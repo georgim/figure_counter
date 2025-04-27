@@ -27,8 +27,8 @@ static void markFigureCells(
     matrix_t& matrix,
     const int startRow,
     const int startCol,
-    const int matrixRows,
-    const int matrixCols
+    const std::size_t matrixRows,
+    const std::size_t matrixCols
 ) {
     std::queue<std::pair<int, int>> q;
     visitCell(q, matrix, startRow, startCol);
@@ -54,8 +54,8 @@ static void markFigureCells(
 }
 
 int countFigures(matrix_t& matrix) {
-    const int matrixRows = matrix.size();
-    const int matrixCols = matrix[0].size();
+    const std::size_t matrixRows = matrix.size();
+    const std::size_t matrixCols = matrix[0].size();
     int figureCount = 0;
 
     for (int i = 0; i < matrixRows; i++) {
