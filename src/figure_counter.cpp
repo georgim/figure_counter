@@ -53,10 +53,10 @@ static void markFigureCells(
     }
 }
 
-int countFigures(matrix_t& matrix) {
+long countFigures(matrix_t& matrix) {
     const std::size_t matrixRows = matrix.size();
     const std::size_t matrixCols = matrix[0].size();
-    int figureCount = 0;
+    long figureCount = 0;
 
     for (int i = 0; i < matrixRows; i++) {
         for (int j = 0; j < matrixCols; j++) {

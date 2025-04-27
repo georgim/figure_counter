@@ -14,6 +14,6 @@ constexpr int8_t COLORED_VISITED = -1;
 
 using matrix_row_t = std::vector<int8_t>;
 using matrix_t = std::vector<std::vector<int8_t>>;
-int countFigures(matrix_t& matrix);
+long countFigures(matrix_t& matrix);
 
 #endif // FIGURE_COUNTER_H

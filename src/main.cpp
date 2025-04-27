@@ -76,7 +76,7 @@ int main(int argc, char* argv[]) {
         auto inputFileName = getInputFilePath(argc, argv);
         auto matrix = fillMatrix(inputFileName);
 
-        int figures = countFigures(matrix);
+        long figures = countFigures(matrix);
         std::cout << figures << " figure" << (figures == 1 ? "" : "s") << std::endl;
 
         return 0;
