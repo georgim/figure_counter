@@ -43,7 +43,7 @@ static matrix_t fillMatrix(const std::string& inputFileName) {
 
     matrix_t matrix(rows, matrix_row_t(cols));
 
-    for (int i = 0; i < rows; i++) {
+    for (auto i = 0; i < rows; i++) {
         if (!std::getline(inputFile, line)) {
             throw std::runtime_error("Error: Not enough rows in the matrix. Expected " +
                 std::to_string(rows) + ", got " + std::to_string(i));
@@ -54,7 +54,7 @@ static matrix_t fillMatrix(const std::string& inputFileName) {
                 std::to_string(cols) + ", got " + std::to_string(line.length()));
         }
 
-        for (int j = 0; j < cols; j++) {
+        for (auto j = 0; j < cols; j++) {
             if (line[j] == BLANK_CHAR) {
                 matrix[i][j] = BLANK;
             } else if (line[j] == COLORED_CHAR) {
